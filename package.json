@@ -8,7 +8,9 @@
   "types": "dist/index.d.ts",
   "exports": {
     "require": "./dist/index.js",
-    "default": "./dist/index.m.js"
+    "default": "./dist/index.m.js",
+    "types": "./dist/index.d.ts",
+    "import": "./dist/index.m.js"
   },
   "scripts": {
     "build": "rm -rf dist && microbundle --tsconfig tsconfig.json --no-sourcemap",
