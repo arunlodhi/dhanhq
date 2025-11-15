@@ -2,15 +2,15 @@
   "name": "dhanhq",
   "version": "1.0.6",
   "description": "DhanHQ API Library for node js to trade with DhanHQ API's.",
-  "main": "./dist/index.js",
-  "module": "./dist/index.m.js",
-  "unpkg": "./dist/index.umd.js",
-  "types": "./dist/index.d.ts",
+  "main": "dist/index.js",
+  "module": "dist/index.m.js",
+  "unpkg": "dist/index.umd.js",
+  "types": "dist/index.d.ts",
   "exports": {
-    "require": "./dist/index.js",
-    "default": "./dist/index.m.js",
     "types": "./dist/index.d.ts",
-    "import": "./dist/index.m.js"
+    "require": "./dist/index.js",
+    "import": "./dist/index.m.js",
+    "default": "./dist/index.m.js"
   },
   "scripts": {
     "build": "rm -rf dist && microbundle --tsconfig tsconfig.json --no-sourcemap",
