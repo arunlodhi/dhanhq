@@ -15,7 +15,8 @@
   "scripts": {
     "build": "rm -rf dist && microbundle --tsconfig tsconfig.json --no-sourcemap",
     "dev": "microbundle --watch --tsconfig tsconfig.json --no-sourcemap",
-    "tsc": "npm run tsc -w --no-initial-compile"
+    "tsc": "npm run tsc -w --no-initial-compile",
+    "prepare": "npm run build"
   },
   "keywords": [
     "Dhan",
@@ -43,6 +44,6 @@
     "ws": "^8.18.0"
   },
   "files": [
-    "dist"
+    "src"
   ]
 }
