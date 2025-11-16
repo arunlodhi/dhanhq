@@ -7,10 +7,12 @@
   "unpkg": "dist/index.umd.js",
   "types": "dist/index.d.ts",
   "exports": {
-    "types": "./dist/index.d.ts",
-    "require": "./dist/index.js",
-    "import": "./dist/index.m.js",
-    "default": "./dist/index.m.js"
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.m.js",
+      "require": "./dist/index.js",
+      "default": "./dist/index.m.js"
+    }
   },
   "scripts": {
     "build": "rm -rf dist && microbundle --tsconfig tsconfig.json --no-sourcemap",
