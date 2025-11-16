@@ -1,17 +1,17 @@
-import {Base} from "./base";
-import {applyMixins} from "./utils";
-import {RestClient} from "./rest-client";
+import { Base } from "./base";
+import { applyMixins } from "./utils";
+import { RestClient } from "./rest-client";
 
-class DhanHqClient extends Base {
-}
+class DhanHqClient extends Base {}
 
-interface DhanHqClient extends RestClient {
-}
+interface DhanHqClient extends RestClient {}
 
 applyMixins(DhanHqClient, [RestClient]);
 
-export {DhanHqClient as DhanHqClient};
+export { DhanHqClient as DhanHqClient };
 
-export * from './marketfeed'
+export * from "./marketfeed";
 
-export * from './types'
+export * from "./types";
+
+export { dhanTimestampToEpoch, epochToDhanTimestamp } from "./utils";
